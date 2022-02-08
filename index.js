@@ -24,6 +24,9 @@ function calcular() {
 
     if (valor < 35000 || valor == null) {
         document.getElementById('MXN').value = "Inversión minima de 35,000 MXN"
+        document.getElementById("rowSerum").style.display = "none";
+        document.getElementById("rowPrice").style.display = "none";
+        document.getElementById("rowEarn").style.display = "none";
         console.log('invalido')
     }
     else if (valor > 34999 && valor < 50000) {
