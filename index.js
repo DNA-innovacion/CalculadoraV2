@@ -109,3 +109,9 @@ function calcular() {
     }
 
 }
+
+document.getElementById('MXN').onkeypress = function (e) {
+    if (e.keyCode == 13) {
+        document.getElementById('btnCalcular').click();
+    }
+}
